@@ -21,3 +21,5 @@
 	***BLANK*** = Magnetic variation direction E/W  
 	***BLANK*** = Positioning system mode indicator  
  **70** = Check sum   
+ 
+ $GNGGA : https://anavs.com/knowledgebase/nmea-format/
