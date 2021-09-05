@@ -48,6 +48,7 @@
 
 	uint8_t BootingHeader[] ={"Booting\r\n"};
 	uint8_t BootHeader[] ={"Booted\r\n"};
+	uint8_t gpsNotReadyHeader[] ={"GPS Not Ready\r\n"};
 /* USER CODE END PV */
 
 /* Private function prototypes -----------------------------------------------*/
@@ -100,13 +101,23 @@ int main(void)
   GPS_Init();
 	HAL_UART_Transmit(&huart4,BootHeader,sizeof(BootHeader),1000);
   /* USER CODE END 2 */
-
+	uint8_t gpsSuccess=0;
+	GPS_t tempGPS;
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
     /* USER CODE END WHILE */
-		GPS_Process();
+		gpsSuccess=GPS_Process();
+		if(gpsSuccess==0)
+		{
+			Print_GPS_Data(&huart4,&tempGPS);
+		}
+		else
+		{
+			//HAL_UART_Transmit(&huart4,gpsNotReadyHeader,sizeof(gpsNotReadyHeader),1000);
+			//HAL_Delay(1000);
+		}
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */

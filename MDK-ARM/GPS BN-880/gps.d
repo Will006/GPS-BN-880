@@ -2,7 +2,6 @@ gps bn-880\gps.o: ..\Core\Src\GPS.c
 gps bn-880\gps.o: ../Core/Inc/GPSConfig.h
 gps bn-880\gps.o: ../Core/Inc/GPS.h
 gps bn-880\gps.o: G:\Program Files\ARM\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
-gps bn-880\gps.o: ../Core/Inc/usart.h
 gps bn-880\gps.o: ../Core/Inc/main.h
 gps bn-880\gps.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h
 gps bn-880\gps.o: ../Core/Inc/stm32f4xx_hal_conf.h
@@ -32,6 +31,7 @@ gps bn-880\gps.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfun
 gps bn-880\gps.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h
 gps bn-880\gps.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h
 gps bn-880\gps.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
+gps bn-880\gps.o: ../Core/Inc/usart.h
 gps bn-880\gps.o: G:\Program Files\ARM\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 gps bn-880\gps.o: G:\Program Files\ARM\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
 gps bn-880\gps.o: G:\Program Files\ARM\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
